@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blitz Bar</title>
+  <meta name="description" content="Blitz Bar is melbourne’s first self-serve açai  bowl experience. The health food cafe also offers smoothies, coffee, salads, raw treats and more.">
+  <style>
+    @font-face {
+      font-family: 'Sofia Pro Regular';
+      src: url('res/fonts/Sofia Pro Regular.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Sofia Pro Regular', Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .firstImage,
+    .lastImage {
+      position: relative;
+    }
+
+    .firstImage > .info {
+      -webkit-backdrop-filter: blur(1px);
+      backdrop-filter: blur(1px);
+      border-radius: 5px;
+      color: #000;
+      flex-direction: column;
+      font-size: 25px;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      max-width: calc(100% - 80px);
+      padding: 20px;
+      position: absolute;
+      right: 0;
+      top: 100px;
+      width: 500px;
+    }
+
+    @media only screen and (max-width: 1150px) {
+      .firstImage > .info {
+        background: rgba(202, 229, 196, 0.6);
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .firstImage > .info > div:first-child {
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 650px) {
+      .firstImage > .info {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      .firstImage > .info > div:first-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    .firstImage > .buttons {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 45px;
+      top: 25px;
+    }
+
+    .firstImage > .buttons > div > a {
+      display: block;
+      margin: 0 7px;
+    }
+
+    .firstImage > .buttons > div > a > img {
+      width: 25px;
+    }
+
+    .firstImage > .buttons > a {
+      background: #173d31;
+      border-radius: 5px;
+      color: #fff;
+      margin-top: 10px;
+      padding: 8px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .lastImage > div {
+      -webkit-backdrop-filter: blur(1px);
+      align-items: center;
+      backdrop-filter: blur(1px);
+      background: rgba(202, 229, 196, 0.6);
+      border-radius: 5px;
+      bottom: 50px;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 15px;
+      position: absolute;
+      right: 0;
+      width: 150px;
+    }
+
+    .lastImage > div > a {
+      margin: 0 7px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="images">
+    <div class="firstImage">
+      <img src="res/images/inside.jpeg">
+      <div class="info">
+        <div>
+          183 Glenferrie Road, Malvern, 3144
+        </div>
+        <div>
+          Mon - Fri: 7:30 - 5:00
+        </div>
+        <div>
+          Sat - Sun: 8:00 - 4:00
+        </div>
+      </div>
+      <div class="buttons">
+        <div>
+          <a href="https://www.instagram.com/blitzbar_au" target="_blank">
+            <img src="res/images/instagram.png">
+          </a>
+          <a href="https://www.tiktok.com/@blitz.bar" target="_blank">
+            <img src="res/images/tiktok.png">
+          </a>
+          <a href="mailto:operations@blitzbar.com.au" target="_blank">
+            <img src="res/images/email.png">
+          </a>
+        </div>
+        <a href="https://www.broadsheet.com.au/melbourne/food-and-drink/article/first-look-melbournes-first-self-serve-acai-spot-blitz-bar-no-ones-judging-your-acai-peanut-butter-ratio" target="_blank">
+          Broadsheet
+        </a>
+      </div>
+    </div>
+    <img src="res/images/entrance.jpeg">
+    <img src="res/images/bowl.jpeg">
+    <img src="res/images/smoothies.jpeg">
+    <div class="lastImage">
+      <img src="res/images/bowl2.jpeg">
+      <div>
+        <a href="https://www.instagram.com/blitzbar_au" target="_blank">
+          <img src="res/images/instagram.png">
+        </a>
+        <a href="https://www.tiktok.com/@blitz.bar" target="_blank">
+          <img src="res/images/tiktok.png">
+        </a>
+        <a href="mailto:operations@blitzbar.com.au" target="_blank">
+          <img src="res/images/email.png">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
