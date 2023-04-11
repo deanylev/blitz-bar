@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blitz Bar</title>
-  <meta name="description" content="Blitz Bar is Melbourne's first self-serve açai bowl experience. The health food cafe also offers smoothies, coffee, salads, raw treats and more.">
+  <meta name="description" content="Blitz Bar is Melbourne's first self-serve açai bowl experience. The health food cafe also offers smoothies, coffee, raw treats and more.">
   <style>
     @font-face {
       font-family: 'Sofia Pro Regular';
@@ -21,12 +21,13 @@
       display: flex;
     }
 
-    .images {
+    body > .images {
       display: flex;
       flex-direction: column;
     }
 
     .firstImage,
+    .otherMoreDifferentImage,
     .lastImage {
       position: relative;
     }
@@ -91,7 +92,60 @@
       width: 100%;
     }
 
-    .lastImage > div {
+    .otherMoreDifferentImage > a {
+      background: #173d31;
+      border-radius: 5px;
+      color: #fff;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 8px 16px;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      width: fit-content;
+    }
+
+    .lastImage > .asSeenIn {
+      -webkit-backdrop-filter: blur(1px);
+      align-items: center;
+      background: rgba(66, 132, 110, 0.8);
+      backdrop-filter: blur(1px);
+      border-radius: 5px;
+      bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 750px;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      width: calc(100% - 40px);
+    }
+
+    .lastImage > .asSeenIn > .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .lastImage > .asSeenIn > .images > a > img {
+      object-fit: contain;
+      width: 150px;
+    }
+
+    @media only screen and (max-width: 380px) {
+      .lastImage > .asSeenIn > .images > a > img {
+        width: 100px;
+      }
+    }
+
+    .lastImage > .social {
       -webkit-backdrop-filter: blur(1px);
       align-items: center;
       backdrop-filter: blur(1px);
@@ -107,7 +161,7 @@
       width: 150px;
     }
 
-    .lastImage > div > a {
+    .lastImage > .social > a {
       margin: 0 7px;
     }
 
@@ -149,11 +203,35 @@
       </div>
     </div>
     <img src="res/images/entrance.jpeg">
-    <img src="res/images/bowl.jpeg">
+    <div class="otherMoreDifferentImage">
+      <img src="res/images/bowl.jpeg">
+      <a href="res/pdfs/menu.pdf">
+        Menu
+      </a>
+    </div>
     <img src="res/images/smoothies.jpeg">
     <div class="lastImage">
       <img src="res/images/bowl2.jpeg">
-      <div>
+      <div class="asSeenIn">
+        <div class="heading">
+          As Seen On
+        </div>
+        <div class="images">
+          <a>
+            <img src="res/images/heraldsun.png">
+          </a>
+          <a href="https://www.broadsheet.com.au/melbourne/food-and-drink/article/first-look-melbournes-first-self-serve-acai-spot-blitz-bar-no-ones-judging-your-acai-peanut-butter-ratio" target="_blank">
+            <img src="res/images/broadsheet.png">
+          </a>
+          <a href="https://www.theurbanlist.com/melbourne/a-list/melbournes-best-new-openings" target="_blank">
+            <img src="res/images/urbanlist.png">
+          </a>
+          <a>
+            <img src="res/images/delicious.png">
+          </a>
+        </div>
+      </div>
+      <div class="social">
         <a href="https://www.instagram.com/blitzbar_au" target="_blank">
           <img src="res/images/instagram.png">
         </a>
