@@ -46,8 +46,15 @@
       max-width: calc(100% - 80px);
       position: absolute;
       right: 0;
-      top: 100px;
       width: fit-content;
+    }
+
+    .firstImage > .infoBrighton {
+      top: 100px;
+    }
+
+    .firstImage > .infoMalvern {
+      top: 290px;
     }
 
     @media only screen and (max-width: 1150px) {
@@ -174,7 +181,21 @@
   <div class="images">
     <div class="firstImage">
       <img src="res/images/inside.jpeg">
-      <div class="info">
+      <div class="info infoBrighton">
+        <div>
+          7/50 Church Street, Brighton, 3186
+        </div>
+        <div>
+          Mon - Thu: 7:30 - 10:00
+        </div>
+        <div>
+          Fri: 7:30 - 10:30
+        </div>
+        <div>
+          Sat - Sun: 8:00 - 10:30
+        </div>
+      </div>
+      <div class="info infoMalvern">
         <div>
           183 Glenferrie Road, Malvern, 3144
         </div>
@@ -182,7 +203,10 @@
           Mon - Fri: 7:30 - 5:00
         </div>
         <div>
-          Sat - Sun: 8:00 - 4:00
+          Sat: 8:00 - 5:00
+        </div>
+        <div>
+          Sun: 8:00 - 4:00, 7:00 - 10ish
         </div>
       </div>
       <div class="buttons">
